@@ -1,7 +1,158 @@
 <!DOCTYPE html>
-<html>
-    <head> <title> Hello world ! </title> </head>
-    <body>
-        <h1> This is my first application ! </h1> <!-- this is a comment -->
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">🍽️ Delicious Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="display-3 fw-bold mb-4">Welcome to Delicious Restaurant</h1>
+            <p class="lead mb-4">Experience culinary excellence with our exquisite menu</p>
+            <a href="#menu" class="btn btn-warning btn-lg">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Our Menu</h2>
+            <div class="row g-4">
+                <!-- Menu Item 1 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" class="card-img-top" alt="Grilled Salmon">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Salmon</h5>
+                            <p class="card-text">Fresh Atlantic salmon grilled to perfection with lemon butter sauce and seasonal vegetables.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$24.99</span>
+                                <button class="btn btn-sm btn-warning">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" class="card-img-top" alt="Wagyu Steak">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Wagyu Steak</h5>
+                            <p class="card-text">Tender Japanese Wagyu beef cooked medium-rare, served with truffle mashed potatoes and asparagus.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$45.99</span>
+                                <button class="btn btn-sm btn-warning">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1579739952767-6f4e3f7f7f8e?w=400&h=300&fit=crop" class="card-img-top" alt="Lobster Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Lobster Pasta Linguine</h5>
+                            <p class="card-text">Delicate linguine with succulent lobster chunks in a light garlic and white wine cream sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$32.99</span>
+                                <button class="btn btn-sm btn-warning">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">About Us</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1504674900152-9c8c8e9d9d9d?w=500&h=400&fit=crop" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Our Story</h3>
+                    <p class="lead">Founded in 2010, Delicious Restaurant has been serving the finest culinary creations for over a decade. Our team of award-winning chefs combines traditional techniques with modern innovation to create unforgettable dining experiences.</p>
+                    <p>We source the freshest ingredients from local suppliers and sustainable farms to ensure every dish meets our high standards of quality and taste. Our commitment to excellence and customer satisfaction has earned us recognition among food enthusiasts across the region.</p>
+                    <p>Visit us today and discover why Delicious Restaurant is the top choice for fine dining in the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
